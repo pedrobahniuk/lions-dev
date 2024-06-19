@@ -5,7 +5,7 @@ const rl = readline.createInterface({
 	output: process.stdout
 })
 
-let funcionarios = []
+let pessoas = []
 let maiorsalario 
 exibirMenu()
 
@@ -14,18 +14,18 @@ exibirMenu()
 	function exibirMenu() {
         console.log(`
         Menu:
-        1. Cadastrar funcionário
-        2. Listar todos os funcionários
+        1. Cadastrar pessoas
+        2. Listar todos os pessoas
         3. Exibir funcionário com maior salário
         4. Sair
         `)
         rl.question('Escolha uma opção: ', (opcao) => {
         switch (opcao) {
         case '1':
-            cadastrarFuncionario()
+            cadastrarPessoas()
         break
         case '2':
-            listarFuncionarios()
+            listarPessoas()
         break
         case '3':
             exibirMaiorSalario()
